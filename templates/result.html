@@ -2,14 +2,14 @@
 <html>
 <head>
     <title>Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Result</h1>
+        <h1>Analysis Result</h1>
         <p class="result">{{ result }}</p>
         <p class="confidence">Confidence: {{ confidence }}</p>
-        <a href="/">Try Again</a>
+        <a href="/">Try Another</a>
     </div>
 </body>
 </html>
