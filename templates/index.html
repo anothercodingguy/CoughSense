@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CoughSense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>CoughSense AI Diagnosis</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".wav,.mp3,.ogg" required>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
